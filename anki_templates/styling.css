@@ -1,0 +1,124 @@
+/* Multiple Choice (A-D) - works on Anki desktop, AnkiMobile and AnkiDroid. */
+
+.card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  text-align: left;
+  color: #1f2328;
+  background-color: #ffffff;
+}
+
+.mcq {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.mcq-question {
+  font-size: 1.1em;
+  margin-bottom: 18px;
+}
+
+.mcq-option {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  background-color: #f6f8fa;
+}
+
+.mcq-letter {
+  flex-shrink: 0;
+  min-width: 1.5em;
+  font-weight: 700;
+}
+
+.mcq-text {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+/* Back side: highlight the correct option (no JavaScript needed). */
+.correct-A .opt-A,
+.correct-B .opt-B,
+.correct-C .opt-C,
+.correct-D .opt-D {
+  border: 2px solid #1a7f37;
+  background-color: #dafbe1;
+  font-weight: 600;
+}
+
+hr#answer {
+  border: none;
+  border-top: 1px solid #d0d7de;
+  margin: 20px 0 14px;
+}
+
+.mcq-answer {
+  padding: 12px 14px;
+  border-left: 5px solid #1a7f37;
+  border-radius: 4px;
+  background-color: #f0fff4;
+  font-weight: 700;
+}
+
+.mcq-explanation {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #f6f8fa;
+  font-size: 0.92em;
+}
+
+.mcq-explanation-label {
+  margin-bottom: 4px;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #57606a;
+}
+
+.mcq code, .mcq pre {
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9em;
+}
+.mcq code { padding: 1px 4px; border-radius: 4px; background-color: rgba(127, 127, 127, 0.15); }
+.mcq pre { padding: 10px; border-radius: 6px; overflow-x: auto; background-color: rgba(127, 127, 127, 0.12); }
+.mcq pre code { padding: 0; background: none; }
+.mcq img { max-width: 100%; height: auto; }
+
+/* Night mode: .nightMode (desktop / AnkiMobile) and .night_mode (AnkiDroid). */
+.card.nightMode, .card.night_mode {
+  color: #e6edf3;
+  background-color: #1e1e1e;
+}
+.nightMode .mcq-option, .night_mode .mcq-option {
+  border-color: #3d444d;
+  background-color: #2a2d31;
+}
+.nightMode .correct-A .opt-A, .nightMode .correct-B .opt-B,
+.nightMode .correct-C .opt-C, .nightMode .correct-D .opt-D,
+.night_mode .correct-A .opt-A, .night_mode .correct-B .opt-B,
+.night_mode .correct-C .opt-C, .night_mode .correct-D .opt-D {
+  border-color: #3fb950;
+  background-color: #1b3a26;
+}
+.nightMode hr#answer, .night_mode hr#answer { border-top-color: #3d444d; }
+.nightMode .mcq-answer, .night_mode .mcq-answer {
+  border-left-color: #3fb950;
+  background-color: #1b3a26;
+}
+.nightMode .mcq-explanation, .night_mode .mcq-explanation { background-color: #2a2d31; }
+.nightMode .mcq-explanation-label, .night_mode .mcq-explanation-label { color: #9da7b3; }
+
+/* Phones */
+@media (max-width: 480px) {
+  .card { font-size: 18px; }
+  .mcq { padding: 8px 4px; }
+  .mcq-option { padding: 9px 11px; }
+}

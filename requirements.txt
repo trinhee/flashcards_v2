@@ -1,0 +1,9 @@
+# pdf_to_text.py - required
+pymupdf>=1.24
+
+# pdf_to_text.py --ocr - optional (also needs the Tesseract program, see README.md)
+pillow
+pytesseract
+
+# flashcards_to_anki.py --apkg - optional (TSV export needs nothing beyond Python)
+genanki

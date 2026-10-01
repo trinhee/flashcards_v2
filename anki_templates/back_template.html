@@ -1,0 +1,22 @@
+<div class="mcq mcq-back correct-{{text:CorrectLetter}}">
+  <div class="mcq-question">{{Question}}</div>
+  <div class="mcq-options">
+    <div class="mcq-option opt-A"><span class="mcq-letter">A.</span><span class="mcq-text">{{OptionA}}</span></div>
+    <div class="mcq-option opt-B"><span class="mcq-letter">B.</span><span class="mcq-text">{{OptionB}}</span></div>
+    <div class="mcq-option opt-C"><span class="mcq-letter">C.</span><span class="mcq-text">{{OptionC}}</span></div>
+    <div class="mcq-option opt-D"><span class="mcq-letter">D.</span><span class="mcq-text">{{OptionD}}</span></div>
+  </div>
+
+  <hr id="answer">
+
+  <div class="mcq-answer">
+    Correct Answer: <span class="mcq-answer-text">{{CorrectLetter}}. {{CorrectAnswer}}</span>
+  </div>
+
+  {{#Explanation}}
+  <div class="mcq-explanation">
+    <div class="mcq-explanation-label">Explanation</div>
+    {{Explanation}}
+  </div>
+  {{/Explanation}}
+</div>

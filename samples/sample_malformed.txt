@@ -1,0 +1,14 @@
+[
+    {'question': '<b>Valid card</b>', 'answer': 'Yes', 'options': ['Yes', 'No', 'Maybe', 'Never']},
+    {'question': 'Missing options key', 'answer': 'X'},
+    {'question': 'Three options only', 'answer': 'A', 'options': ['A', 'B', 'C']},
+    {'question': 'Duplicate options', 'answer': 'A', 'options': ['A', 'B', 'B', 'C']},
+    {'question': 'Answer not in options', 'answer': 'E', 'options': ['A', 'B', 'C', 'D']},
+    {'question': '<b></b>', 'answer': 'A', 'options': ['A', 'B', 'C', 'D']},
+    'this is not a dictionary',
+    {'question': 'Answer differs only by case', 'answer': 'paris', 'options': ['Paris', 'Rome', 'Oslo', 'Bern']},
+    {'question': 'Typo in key', 'answer': 'A', 'option': ['A', 'B', 'C', 'D']},
+    {'question': '<b>Valid card</b>', 'answer': 'Yes', 'options': ['No', 'Yes', 'Maybe', 'Never']},
+    {'question': '<b>Valid card</b>', 'answer': 'Maybe', 'options': ['Yes', 'No', 'Maybe', 'Never']},
+    {'question': 'Which type holds ints in C#?', 'answer': 'List<int>', 'options': ['List<int>', 'Dict', 'Set', 'Map']},
+]

@@ -1,0 +1,37 @@
+
+```python
+[
+    {
+        'question': '<b>What is a foreign key?</b>',
+        'answer': 'A field that references a primary key in another table',
+        'options': [
+            'A field that uniquely identifies every row',
+            'A field that references a primary key in another table',
+            'A field used only for sorting data',
+            'A field that cannot contain duplicate values'
+        ]
+    },
+    {
+        'question': 'Which SQL clause filters rows <i>after</i> grouping?',
+        'answer': 'HAVING',
+        'options': ['WHERE', 'GROUP BY', 'HAVING', 'ORDER BY']
+    },
+    {
+        'question': "What does the term \"atomic\" mean in first normal form (1NF)?",
+        'answer': "Each column holds a single, indivisible value",
+        'options': [
+            "Each column holds a single, indivisible value",
+            "Every table has exactly one key",
+            "Transactions can't be interrupted",
+            "Rows are stored in insertion order"
+        ]
+    },
+    {
+        'question': '# of candidate keys a relation must have, at minimum?',
+        'answer': '1',
+        'options': ['0', '2', '3', '1'],
+        'explanation': 'Every relation has at least one candidate key.\nThe whole attribute set works if nothing smaller does.'
+    },
+]
+```
+
