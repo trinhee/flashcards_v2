@@ -507,5 +507,3 @@ This runs both test suites. The `pdf_to_text.py` tests build their own PDFs with
 OCR behaviour is checked with a stand-in for Tesseract that counts how many pages get OCR'd, so those tests run anywhere. One extra test runs real Tesseract when it is installed.
 
 Tests skip automatically when an optional package is missing: PyMuPDF for the PDF tests, Pillow for the OCR tests, genanki for the `.apkg` test.
-#   M y   P r o j e c t  
- 
